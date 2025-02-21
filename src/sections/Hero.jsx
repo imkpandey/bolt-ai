@@ -3,11 +3,10 @@
 import React from "react";
 import dynamic from "next/dynamic";
 import Button from "@/components/Button";
-import starsBg from "@/assets/stars.png";
 import { Canvas } from "@react-three/fiber";
 import Stars from "@/components/stars";
 
-const Background = dynamic(() => import("@/components/Background"), {
+const Background = dynamic(() => import("@/components/ui/Background"), {
   ssr: false,
 });
 
