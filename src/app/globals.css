@@ -1,0 +1,150 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "GT Walsheim Trial Rg";
+  src: url("../../public/fonts/GTWalsheimTrial-Rg.eot");
+  src: url("../../public/fonts/GTWalsheimTrial-Rg.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../public/fonts/GTWalsheimTrial-Rg.woff2") format("woff2"),
+    url("../../public/fonts/GTWalsheimTrial-Rg.woff") format("woff"),
+    url("../../public/fonts/GTWalsheimTrial-Rg.ttf") format("truetype"),
+    url("../../public/fonts/GTWalsheimTrial-Rg.svg#GTWalsheimTrial-Rg")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GT Walsheim Trial Lt";
+  src: url("../../public/fonts/GTWalsheimTrial-Lt.eot");
+  src: url("../../public/fonts/GTWalsheimTrial-Lt.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../public/fonts/GTWalsheimTrial-Lt.woff2") format("woff2"),
+    url("../../public/fonts/GTWalsheimTrial-Lt.woff") format("woff"),
+    url("../../public/fonts/GTWalsheimTrial-Lt.ttf") format("truetype"),
+    url("../../public/fonts/GTWalsheimTrial-Lt.svg#GTWalsheimTrial-Lt")
+      format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GT Walsheim Trial Bl";
+  src: url("../../public/fonts/GTWalsheimTrial-Bl.eot");
+  src: url("../../public/fonts/GTWalsheimTrial-Bl.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../public/fonts/GTWalsheimTrial-Bl.woff2") format("woff2"),
+    url("../../public/fonts/GTWalsheimTrial-Bl.woff") format("woff"),
+    url("../../public/fonts/GTWalsheimTrial-Bl.ttf") format("truetype"),
+    url("../../public/fonts/GTWalsheimTrial-Bl.svg#GTWalsheimTrial-Bl")
+      format("svg");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GT Walsheim Trial Bd";
+  src: url("../../public/fonts/GTWalsheimTrial-Bd.eot");
+  src: url("../../public/fonts/GTWalsheimTrial-Bd.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../public/fonts/GTWalsheimTrial-Bd.woff2") format("woff2"),
+    url("../../public/fonts/GTWalsheimTrial-Bd.woff") format("woff"),
+    url("../../public/fonts/GTWalsheimTrial-Bd.ttf") format("truetype"),
+    url("../../public/fonts/GTWalsheimTrial-Bd.svg#GTWalsheimTrial-Bd")
+      format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GT Walsheim Trial Th";
+  src: url("../../public/fonts/GTWalsheimTrial-Th.eot");
+  src: url("../../public/fonts/GTWalsheimTrial-Th.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../public/fonts/GTWalsheimTrial-Th.woff2") format("woff2"),
+    url("../../public/fonts/GTWalsheimTrial-Th.woff") format("woff"),
+    url("../../public/fonts/GTWalsheimTrial-Th.ttf") format("truetype"),
+    url("../../public/fonts/GTWalsheimTrial-Th.svg#GTWalsheimTrial-Th")
+      format("svg");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GT Walsheim Trial U Bd";
+  src: url("../../public/fonts/GTWalsheimTrial-UBd.eot");
+  src: url("../../public/fonts/GTWalsheimTrial-UBd.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../public/fonts/GTWalsheimTrial-UBd.woff2") format("woff2"),
+    url("../../public/fonts/GTWalsheimTrial-UBd.woff") format("woff"),
+    url("../../public/fonts/GTWalsheimTrial-UBd.ttf") format("truetype"),
+    url("../../public/fonts/GTWalsheimTrial-UBd.svg#GTWalsheimTrial-UBd")
+      format("svg");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GT Walsheim Trial Md";
+  src: url("../../public/fonts/GTWalsheimTrial-Md.eot");
+  src: url("../../public/fonts/GTWalsheimTrial-Md.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../public/fonts/GTWalsheimTrial-Md.woff2") format("woff2"),
+    url("../../public/fonts/GTWalsheimTrial-Md.woff") format("woff"),
+    url("../../public/fonts/GTWalsheimTrial-Md.ttf") format("truetype"),
+    url("../../public/fonts/GTWalsheimTrial-Md.svg#GTWalsheimTrial-Md")
+      format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  margin: 0px;
+  font-family: "GT Walsheim Trial Rg", sans-serif;
+  overflow-x: hidden;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+canvas {
+  opacity: 0;
+  touch-action: none;
+  animation: fade-in 1.5s ease 0.5s forwards;
+  z-index: 9;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #000000;
+  color: white;
+}
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: rgb(0, 152, 254);
+  background: white;
+}
+
+::selection {
+  color: rgb(0, 152, 254);
+  background: white;
+}
